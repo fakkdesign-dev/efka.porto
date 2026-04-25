@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFKA Portfolio | Creative Design Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="id">
+            <span class="lang-code">ID</span>
+        </button>
+        <button class="lang-btn" data-lang="en">
+            <span class="lang-code">EN</span>
+        </button>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-follower"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-text">EFKA</span>
+            <span class="logo-dot">.</span>
+        </div>
+        <nav class="nav">
+            <a href="#home" class="nav-link" data-text="nav.home">Home</a>
+            <a href="#gallery" class="nav-link" data-text="nav.gallery">Gallery</a>
+            <a href="#about" class="nav-link" data-text="nav.about">About</a>
+            <a href="#contact" class="nav-link" data-text="nav.contact">Contact</a>
+        </nav>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-elements">
+            <div class="bg-circle circle-1"></div>
+            <div class="bg-circle circle-2"></div>
+            <div class="bg-grid"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge" data-text="hero.badge">
+                <span class="badge-icon">✦</span>
+                <span>Welcome to My Universe</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line" data-text="hero.title1">Creative</span>
+                <span class="title-line" data-text="hero.title2">Designer</span>
+                <span class="title-line accent" data-text="hero.title3">& Visual Artist</span>
+            </h1>
+            <p class="hero-subtitle" data-text="hero.subtitle">
+                Halo! Aku EFKA, seorang creative designer yang passionate dalam mengubah ide menjadi visual yang epik dan memorable. Ready untuk collaborate dan buat sesuatu yang luar biasa bareng-sama? ✨🔥
+            </p>
+            <div class="hero-cta">
+                <a href="#gallery" class="btn btn-primary" data-text="hero.cta1">
+                    <span>Lihat Portfolio</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary" data-text="hero.cta2">
+                    <span>Hubungi Aku</span>
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label" data-text="hero.stat1">Projects Selesai</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label" data-text="hero.stat2">Tahun Pengalaman</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label" data-text="hero.stat3">Kreativitas</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-image-wrapper">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" alt="EFKA Profile">
+                </div>
+                <div class="hero-image-frame"></div>
+                <div class="hero-float-elements">
+                    <span class="float-element el-1">🎨</span>
+                    <span class="float-element el-2">✨</span>
+                    <span class="float-element el-3">💫</span>
+                    <span class="float-element el-4">🔥</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" data-text="hero.scroll">
+            <span>Geser ke kanan →</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-header">
+            <span class="section-tag" data-text="gallery.tag">Portfolio</span>
+            <h2 class="section-title" data-text="gallery.title">Featured <span class="highlight">Projects</span></h2>
+            <p class="section-desc" data-text="gallery.desc">
+                Nih beberapa hasil kreasi aku~ Geser ke kanan atau klik tombolnya buat lihat lebih banyak ya! ✨📸
+            </p>
+        </div>
+
+        <div class="slide-caption" data-text="gallery.slideCaption">
+            <span class="caption-text">Geser ke kanan untuk lihat lebih banyak →</span>
+        </div>
+
+        <!-- Slide Navigation -->
+        <div class="slide-navigation">
+            <button class="slide-nav-btn prev-btn" aria-label="Previous">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="slide-indicators">
+                <span class="slide-indicator active" data-slide="0"></span>
+                <span class="slide-indicator" data-slide="1"></span>
+                <span class="slide-indicator" data-slide="2"></span>
+                <span class="slide-indicator" data-slide="3"></span>
+            </div>
+            <button class="slide-nav-btn next-btn" aria-label="Next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Slider Container -->
+        <div class="slider-container">
+            <div class="slider-track">
+                
+                <!-- ============ SLIDE 1: Branding & Identity ============ -->
+                <div class="slide" data-slide="0">
+                    <div class="slide-inner">
+                        <div class="slide-header">
+                            <span class="slide-number">01</span>
+                            <span class="slide-label" data-text="gallery.slide1.label">Branding & Identity</span>
+                        </div>
+                        <div class="photo-grid">
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop" alt="Brand Identity">
+                                <div class="photo-overlay">
+                                    <h3>Brand Identity</h3>
+                                    <p>Complete branding package</p>
+                                    <span class="photo-tag">Branding</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=300&fit=crop" alt="Logo Design">
+                                <div class="photo-overlay">
+                                    <h3>Logo Design</h3>
+                                    <p>Modern minimalist logo</p>
+                                    <span class="photo-tag">Logo</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1634942537034-253e0c9a5a13?w=400&h=300&fit=crop" alt="Visual System">
+                                <div class="photo-overlay">
+                                    <h3>Visual System</h3>
+                                    <p>Comprehensive visual guide</p>
+                                    <span class="photo-tag">Design</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&h=300&fit=crop" alt="Brand Guidelines">
+                                <div class="photo-overlay">
+                                    <h3>Brand Guidelines</h3>
+                                    <p>Style guide development</p>
+                                    <span class="photo-tag">Guidelines</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=400&h=300&fit=crop" alt="Packaging">
+                                <div class="photo-overlay">
+                                    <h3>Packaging Design</h3>
+                                    <p>Product packaging solution</p>
+                                    <span class="photo-tag">Package</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1542744095-fcf48d432b5b?w=400&h=300&fit=crop" alt="Stationery">
+                                <div class="photo-overlay">
+                                    <h3>Stationery Set</h3>
+                                    <p>Business card & letterhead</p>
+                                    <span class="photo-tag">Print</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1561070791-36c11767b26a?w=400&h=300&fit=crop" alt="Social Media">
+                                <div class="photo-overlay">
+                                    <h3>Social Media Kit</h3>
+                                    <p>Instagram template pack</p>
+                                    <span class="photo-tag">Social</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=300&fit=crop" alt="Campaign">
+                                <div class="photo-overlay">
+                                    <h3>Campaign Visual</h3>
+                                    <p>Marketing campaign design</p>
+                                    <span class="photo-tag">Marketing</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1633371930888-5fab0d1b6f29?w=400&h=300&fit=crop" alt="UI Design">
+                                <div class="photo-overlay">
+                                    <h3>UI Design</h3>
+                                    <p>App interface design</p>
+                                    <span class="photo-tag">UI/UX</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1632501641765-e568d28b0015?w=400&h=300&fit=crop" alt="Icon Set">
+                                <div class="photo-overlay">
+                                    <h3>Icon Set</h3>
+                                    <p>Custom icon collection</p>
+                                    <span class="photo-tag">Icons</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============ SLIDE 2: Digital Art & Illustration ============ -->
+                <div class="slide" data-slide="1">
+                    <div class="slide-inner">
+                        <div class="slide-header">
+                            <span class="slide-number">02</span>
+                            <span class="slide-label" data-text="gallery.slide2.label">Digital Art & Illustration</span>
+                        </div>
+                        <div class="photo-grid">
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=300&fit=crop" alt="Digital Art 1">
+                                <div class="photo-overlay">
+                                    <h3>Digital Portrait</h3>
+                                    <p>Custom digital artwork</p>
+                                    <span class="photo-tag">Art</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1633186710892-3a5f4f2e28f5?w=400&h=300&fit=crop" alt="Digital Art 2">
+                                <div class="photo-overlay">
+                                    <h3>Abstract Art</h3>
+                                    <p>Abstract composition</p>
+                                    <span class="photo-tag">Art</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?w=400&h=300&fit=crop" alt="Character Design">
+                                <div class="photo-overlay">
+                                    <h3>Character Design</h3>
+                                    <p>Original character creation</p>
+                                    <span class="photo-tag">Character</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=400&h=300&fit=crop" alt="3D Illustration">
+                                <div class="photo-overlay">
+                                    <h3>3D Illustration</h3>
+                                    <p>Three-dimensional art</p>
+                                    <span class="photo-tag">3D</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=400&h=300&fit=crop" alt="Mural Design">
+                                <div class="photo-overlay">
+                                    <h3>Mural Design</h3>
+                                    <p>Wall art installation</p>
+                                    <span class="photo-tag">Mural</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=400&h=300&fit=crop" alt="Gallery Art">
+                                <div class="photo-overlay">
+                                    <h3>Gallery Wall</h3>
+                                    <p>Art exhibition piece</p>
+                                    <span class="photo-tag">Gallery</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=400&h=300&fit=crop" alt="Vector Art">
+                                <div class="photo-overlay">
+                                    <h3>Vector Art</h3>
+                                    <p>Scalable vector graphics</p>
+                                    <span class="photo-tag">Vector</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1563089145-599997674d42?w=400&h=300&fit=crop" alt="Neon Art">
+                                <div class="photo-overlay">
+                                    <h3>Neon Art</h3>
+                                    <p>Neon-style illustration</p>
+                                    <span class="photo-tag">Neon</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?w=400&h=300&fit=crop" alt="Gradient">
+                                <div class="photo-overlay">
+                                    <h3>Gradient Design</h3>
+                                    <p>Modern gradient style</p>
+                                    <span class="photo-tag">Gradient</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=300&fit=crop" alt="Isometric">
+                                <div class="photo-overlay">
+                                    <h3>Isometric Art</h3>
+                                    <p>Isometric illustration</p>
+                                    <span class="photo-tag">Isometric</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============ SLIDE 3: UI/UX & Web Design ============ -->
+                <div class="slide" data-slide="2">
+                    <div class="slide-inner">
+                        <div class="slide-header">
+                            <span class="slide-number">03</span>
+                            <span class="slide-label" data-text="gallery.slide3.label">UI/UX & Web Design</span>
+                        </div>
+                        <div class="photo-grid">
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=300&fit=crop" alt="Web Design 1">
+                                <div class="photo-overlay">
+                                    <h3>Landing Page</h3>
+                                    <p>Modern landing page design</p>
+                                    <span class="photo-tag">Web</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Dashboard">
+                                <div class="photo-overlay">
+                                    <h3>Dashboard UI</h3>
+                                    <p>Admin dashboard design</p>
+                                    <span class="photo-tag">UI</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Data Viz">
+                                <div class="photo-overlay">
+                                    <h3>Data Visualization</h3>
+                                    <p>Chart & infographic design</p>
+                                    <span class="photo-tag">Data</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&h=300&fit=crop" alt="Mobile App">
+                                <div class="photo-overlay">
+                                    <h3>Mobile App</h3>
+                                    <p>iOS & Android interface</p>
+                                    <span class="photo-tag">Mobile</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop" alt="E-commerce">
+                                <div class="photo-overlay">
+                                    <h3>E-commerce</h3>
+                                    <p>Online shop interface</p>
+                                    <span class="photo-tag">Shop</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop" alt="SaaS Product">
+                                <div class="photo-overlay">
+                                    <h3>SaaS Product</h3>
+                                    <p>Software interface design</p>
+                                    <span class="photo-tag">SaaS</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1517292987719-0369a794ec0b?w=400&h=300&fit=crop" alt="Portfolio">
+                                <div class="photo-overlay">
+                                    <h3>Portfolio Site</h3>
+                                    <p>Personal portfolio web</p>
+                                    <span class="photo-tag">Portfolio</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=300&fit=crop" alt="Web App">
+                                <div class="photo-overlay">
+                                    <h3>Web Application</h3>
+                                    <p>Full web app design</p>
+                                    <span class="photo-tag">Web App</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1522542550221-31fd8575f6a7?w=400&h=300&fit=crop" alt="Wireframe">
+                                <div class="photo-overlay">
+                                    <h3>Wireframe</h3>
+                                    <p>Low-fi wireframe design</p>
+                                    <span class="photo-tag">Wireframe</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=400&h=300&fit=crop" alt="Prototype">
+                                <div class="photo-overlay">
+                                    <h3>Prototype</h3>
+                                    <p>Interactive prototype</p>
+                                    <span class="photo-tag">Prototype</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============ SLIDE 4: Print & Editorial ============ -->
+                <div class="slide" data-slide="3">
+                    <div class="slide-inner">
+                        <div class="slide-header">
+                            <span class="slide-number">04</span>
+                            <span class="slide-label" data-text="gallery.slide4.label">Print & Editorial</span>
+                        </div>
+                        <div class="photo-grid">
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&h=300&fit=crop" alt="Book Cover">
+                                <div class="photo-overlay">
+                                    <h3>Book Cover</h3>
+                                    <p>Editorial book design</p>
+                                    <span class="photo-tag">Print</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=400&h=300&fit=crop" alt="Magazine">
+                                <div class="photo-overlay">
+                                    <h3>Magazine Layout</h3>
+                                    <p>Editorial magazine design</p>
+                                    <span class="photo-tag">Editorial</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=400&h=300&fit=crop" alt="Poster">
+                                <div class="photo-overlay">
+                                    <h3>Event Poster</h3>
+                                    <p>Concert & event poster</p>
+                                    <span class="photo-tag">Poster</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&h=300&fit=crop" alt="Brochure">
+                                <div class="photo-overlay">
+                                    <h3>Brochure</h3>
+                                    <p>Tri-fold brochure design</p>
+                                    <span class="photo-tag">Brochure</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1607453998774-d533f65dac99?w=400&h=300&fit=crop" alt="Business Card">
+                                <div class="photo-overlay">
+                                    <h3>Business Card</h3>
+                                    <p>Premium business card</p>
+                                    <span class="photo-tag">Business</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=400&h=300&fit=crop" alt="Menu Design">
+                                <div class="photo-overlay">
+                                    <h3>Menu Design</h3>
+                                    <p>Restaurant menu design</p>
+                                    <span class="photo-tag">Menu</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=400&h=300&fit=crop" alt="Invitation">
+                                <div class="photo-overlay">
+                                    <h3>Invitation</h3>
+                                    <p>Wedding & event invite</p>
+                                    <span class="photo-tag">Invite</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop" alt="Annual Report">
+                                <div class="photo-overlay">
+                                    <h3>Annual Report</h3>
+                                    <p>Corporate annual report</p>
+                                    <span class="photo-tag">Report</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop" alt="Calendar">
+                                <div class="photo-overlay">
+                                    <h3>Calendar</h3>
+                                    <p>Custom calendar design</p>
+                                    <span class="photo-tag">Calendar</span>
+                                </div>
+                            </div>
+                            <div class="photo-card">
+                                <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop" alt="CD Cover">
+                                <div class="photo-overlay">
+                                    <h3>Album Cover</h3>
+                                    <p>Music album artwork</p>
+                                    <span class="photo-tag">Music</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <div class="about-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop" alt="EFKA About">
+                    <div class="about-img-decoration"></div>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-tag" data-text="about.tag">About Me</span>
+                <h2 class="section-title" data-text="about.title">Hi, I'm <span class="highlight">EFKA</span>!</h2>
+                <p class="about-text" data-text="about.text1">
+                    Aku adalah seorang creative designer yang vibes-nya selalu positive dan full of ideas! Dari kecil udah suka gambar dan sekarang berhasil monetize passion aku lewat design 🎨✨
+                </p>
+                <p class="about-text" data-text="about.text2">
+                    Spesialisasi aku di branding, UI/UX design, digital art, dan apapun yang berbau visual creative. Aku percaya design yang bagus itu yang nggak cuma cantik, tapi juga bisa storytelling dan solve problems 💪🔥
+                </p>
+                <div class="about-skills">
+                    <h3 data-text="about.skillsTitle">Skills & Tools:</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag">Adobe Photoshop</span>
+                        <span class="skill-tag">Adobe Illustrator</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Adobe XD</span>
+                        <span class="skill-tag">After Effects</span>
+                        <span class="skill-tag">Canva Pro</span>
+                        <span class="skill-tag">Blender</span>
+                        <span class="skill-tag">Procreate</span>
+                    </div>
+                </div>
+                <div class="about-cta">
+                    <a href="#contact" class="btn btn-primary" data-text="about.cta">
+                        <span>Yuk Kerjasama!</span>
+                        <i class="fas fa-rocket"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-header">
+                <span class="section-tag" data-text="contact.tag">Get In Touch</span>
+                <h2 class="section-title" data-text="contact.title">Let's Create <span class="highlight">Together!</span></h2>
+                <p class="contact-desc" data-text="contact.desc">
+                    Punya project yang mau direalisasikan? Atau cuma mau ngobrol? Jangan sungkan buat reach out ya! Aku always open untuk collaborate dan diskusi ✨🤙
+                </p>
+            </div>
+            <div class="contact-cards">
+                <a href="https://wa.me/6287824018797" target="_blank" class="contact-card whatsapp">
+                    <div class="card-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="card-info">
+                        <span class="card-label" data-text="contact.whatsapp">WhatsApp</span>
+                        <span class="card-value">+62 878-2401-8797</span>
+                    </div>
+                    <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="mailto:fakkdesign@gmail.com" class="contact-card email">
+                    <div class="card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="card-info">
+                        <span class="card-label" data-text="contact.email">Email</span>
+                        <span class="card-value">fakkdesign@gmail.com</span>
+                    </div>
+                    <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="https://www.instagram.com/hai.galll?igsh=ZjNvMjR5OWhrODlt" target="_blank" class="contact-card instagram">
+                    <div class="card-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="card-info">
+                        <span class="card-label" data-text="contact.instagram">Instagram</span>
+                        <span class="card-value">@hai.galll</span>
+                    </div>
+                    <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">EFKA</span>
+                <span class="logo-dot">.</span>
+            </div>
+            <p class="footer-tagline" data-text="footer.tagline">
+                Creating magic, one pixel at a time ✨ Made with 💜 and too much kopi ☕
+            </p>
+            <div class="footer-links">
+                <a href="https://wa.me/6287824018797" target="_blank" class="footer-link">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:fakkdesign@gmail.com" class="footer-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.instagram.com/hai.galll?igsh=ZjNvMjR5OWhrODlt" target="_blank" class="footer-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p class="footer-closing" data-text="footer.closing">
+                © 2024 EFKA Design. No cap, all rights reserved 🔥💻
+            </p>
+            <p class="footer-genz" data-text="footer.genz">
+                built with ☕ + 🎵 + late night coding session 🌙✨
+            </p>
+        </div>
+        <div class="footer-decoration">
+            <span class="deco-text">EFKA</span>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
